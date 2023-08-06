@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --clr-very-dark-blue: hsl(243, 87%, 12%);
+  --clr-desaturated-blue: hsl(238, 22%, 44%);
+
+  /* accent */
+  --clr-Bright-blue: hsl(224, 93%, 58%);
+  --clr-moderate-cyan: hsl(170, 45%, 43%);
+
+  /* neutral */
+  --clr-light-grayish-blue: hsl(240, 75%, 98%);
+  --clr-light-grey: hsl(0, 0%, 75%);
+
+  /* font--families */
+  --headings-font-family: "Raleway", sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
+}
+
+Body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====================first page=========================== */
+
+h1 {
+  font-family: var(--headings-font-family);
+}
+
+p {
+  font-family: var(--body-font-family);
+  font-weight: 700;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.heading {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-family: var(--headings-font-family);
+  margin: 75px 75px 0 75px;
+}
+
+.gap {
+  margin-left: auto;
+}
+.heading a {
+  text-decoration: none;
+  color: var(--clr-desaturated-blue);
+}
+
+.accessible-location {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 250px;
+  margin: 75px;
+}
+
+.input {
+  display: flex;
+  gap: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 38%;
+  flex-shrink: 0;
+  gap: 25px;
+  align-self: center;
+}
+
+.input input {
+  padding: 10px;
+  flex-basis: 60%;
+  border-radius: 3px;
+}
+
+.input button {
+  background-color: var(--clr-Bright-blue);
+  color: var(--clr-light-grayish-blue);
+  outline: none;
+  border: none;
+  padding: 10px;
+  flex-basis: 40%;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.logo-icon {
+  flex-basis: 62%;
+  height: 100%;
+  width: 100%;
+}
+
+.curve {
+  width: 100%;
+  margin-top: 50px;
+}
+/* ======================first page=========================== */
+
+/* =================================== second page=================== */
+
+.second-page {
+  background-color: var(--clr-light-grayish-blue);
+  display: flex;
+}
+
+.productive {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 70px;
+  gap: 35px;
+}
+
+.illustration2 {
+  margin: 70px 70px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.productive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.green-link {
+  display: inline;
+  align-items: center;
+  padding: 6px 6px 6px 0;
+  border-bottom: 1px solid var(--clr-moderate-cyan);
+  width: 190px;
+}
+
+.green-link a {
+  text-decoration: none;
+  color: var(--clr-moderate-cyan);
+  font-size: large;
+  font-family: var(--body-font-family);
+}
+
+.productive-comment {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+  margin-top: 30px;
+  justify-content: start;
+  gap: 10px;
+  font-family: var(--body-font-family);
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.commentator {
+  display: flex;
+  gap: 10px;
+}
+
+.commentator .post {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-footer {
+  background-color: var(--clr-desaturated-blue);
+  padding: 80px;
+  color: var(--clr-light-grayish-blue);
+  font-weight: 500;
+  display: flex;
+  gap: 300px;
+}
+
+.first-footer-right {
+  flex-basis: 50%;
+}
+
+.first-footer-left {
+  flex-basis: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-input input {
+  padding: 15px 200px 15px 30px;
+  flex-basis: 60%;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.footer-input button {
+  background-color: var(--clr-Bright-blue);
+  color: var(--clr-light-grayish-blue);
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+  flex-basis: 40%;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.second-footer {
+  background-color: var(--clr-very-dark-blue);
+  /* height: 100px; */
+  padding: 80px;
+  
+}
+
+.image {
+  margin-bottom: 30px;
+  fill: aliceblue;
+}
+
+.second-footer-down {
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-light-grayish-blue);
+}
+
+.fylo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  color: var(--clr-light-grayish-blue);
+  color: white;
+}
+
+.contact-us ul {
+  list-style: none;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us ul li {
+  padding: 10px 0;
+}
+
+.contact-us ul li {
+  padding: 10px 0;
+}
+
+/* =================================== second page=================== */
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+.ball {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--clr-light-grayish-blue);
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
